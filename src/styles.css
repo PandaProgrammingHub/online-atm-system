@@ -1,0 +1,559 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: #215bd6;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #215bd6;
+  text-decoration: underline;
+}
+
+.loading-div-icon {
+  display: block;
+  color: #ffffff;
+  margin: 5%;
+  width: 100%;
+  font-size: 30px;
+}
+.link {
+  color: #ef8d9c;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.pull-right {
+  float: right;
+}
+.show-msg {
+  color: #ffffff;
+  margin: 10px;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.made_by {
+  color: #000;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+#orderStatus {
+  font-size: 14px;
+}
+#orderStatus h2 {
+  color: #0e4e81;
+  border-bottom: 1px solid #0093d0;
+}
+
+.searchUser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+.searchUser .panel,
+.accordion .panel {
+  border-bottom: none !important;
+}
+.login {
+  border: none;
+  width: 40%;
+}
+.searchUser .login .panel-heading {
+  background: #25557b !important;
+  color: #fff !important;
+  text-align: center;
+}
+.orderStatusUserSearch {
+  border: none;
+  width: 100%;
+}
+.searchUser .orderStatusUserSearch .panel-heading {
+  background: #25557b !important;
+  color: #fff !important;
+  text-align: center;
+}
+.searchUser .help-block {
+  color: #ea0b0b !important;
+}
+.accordion .panel .panel-heading {
+  background: #25557b !important;
+  color: #fff !important;
+}
+.accordion a {
+  text-decoration: none;
+  font-size: 15px;
+}
+.accordion a.collapsed:before {
+  transform: rotate(0deg);
+  transition: all 0.3s cubic-bezier(0.04, 0, 0.2, 1);
+  color: #fff;
+}
+.accordion a:before {
+  content: '\E3B5';
+  /* position: absolute; */
+  top: 0.5em;
+  left: 0.25em;
+  display: inline-block;
+  font-family: icomoon;
+  color: #fff;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  speak: none;
+  transform: rotate(90deg);
+  transition: all 0.25s ease-in;
+}
+#orderStatus .userInfo {
+  padding: 20px;
+}
+
+#orderStatus fieldset {
+  border: 1px solid #ddd !important;
+  margin-top: 10px;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  padding-left: 20px !important;
+}
+
+#orderStatus legend {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  width: 25%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 5px 5px 20px;
+  /* background-color: #ffffff; */
+}
+
+@media (min-width: 768px) {
+  #orderStatusUserList {
+    width: 750px;
+  }
+}
+
+#orderStatusUserList table thead tr th {
+  background: #25557b !important;
+  color: #fff !important;
+  text-align: center;
+}
+
+#orderStatusUserList table tbody tr {
+  cursor: pointer;
+}
+.paginationArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.accessRightTable > thead > tr > th {
+  border-left: 1px solid #fff;
+}
+.accessRightTable > tbody > tr > td {
+  background-color: #e5eaed !important;
+}
+.accessRightTable > tbody > tr > th {
+  vertical-align: top;
+  padding: 5px 10px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: none !important;
+  background-color: #e5eaed !important;
+}
+
+#searchUserList_table tbody {
+  display: block;
+  height: 400px;
+  overflow-y: scroll;
+}
+#searchUserList_table thead {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+#searchUserList_table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#searchUserList_table > thead > tr > th {
+  border-bottom: 2px solid #d6dce0;
+  background: #fff;
+}
+
+#userAccess .paginationPanel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#userAccess .paginationPanel .sizePerPagePanel {
+  flex: 0 1 20%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#userAccess .paginationPanel .paginationListPanel {
+  flex: 0 1 80%;
+}
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f6f7f8;
+  border: 1px solid #e2e5e8;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.well blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.well-lg {
+  padding: 24px;
+  border-radius: 0;
+}
+
+.well-sm {
+  padding: 9px;
+  border-radius: 0;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  color: #000;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #4e616e;
+  background-color: white;
+  background-image: none;
+  border: 1px solid #d6dce0;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.form-control:focus {
+  border-color: #6faddf;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(111, 173, 223, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(111, 173, 223, 0.6);
+}
+
+.form-control::-moz-placeholder {
+  color: #98a8b4;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #98a8b4;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #98a8b4;
+}
+
+.form-control::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: #f6f7f8;
+  opacity: 1;
+}
+
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+
+textarea.form-control {
+  height: auto;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 200ms cubic-bezier(0.04, 0, 0.2, 1);
+  border: 1px solid #e2e5e8;
+  margin: 0px 5px;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+
+.panel-title > a,
+.panel-title > small,
+.panel-title > .small,
+.panel-title > small > a,
+.panel-title > .small > a {
+  color: inherit;
+}
+
+.panel-footer {
+  padding: 10px 15px;
+  background-color: #f6f7f8;
+  border-top: 1px solid #d6dce0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Assign grid instructions to our parent grid container, mobile-first (hide the sidenav) */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    'sidenav header'
+    'sidenav main'
+    'sidenav footer';
+  height: 100vh;
+}
+
+.menu-icon {
+  position: fixed; /* Needs to stay visible for all mobile scrolling */
+  display: flex;
+  top: 5px;
+  left: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #dadae3;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  padding: 12px;
+}
+
+/* Give every child element its grid name */
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: #648ca6;
+}
+
+/* Make room for the menu icon on mobile */
+.header__search {
+  margin-left: 42px;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  overflow-y: auto;
+  transform: translateX(-245px);
+  transition: all 0.6s ease-in-out;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  z-index: 2; /* Needs to sit above the hamburger menu icon */
+  background-color: #394263;
+}
+
+.sidenav.active {
+  transform: translateX(0);
+}
+
+.sidenav__close-icon {
+  position: absolute;
+  visibility: visible;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ddd;
+}
+
+.sidenav__list {
+  padding: 0;
+  margin-top: 85px;
+  list-style-type: none;
+}
+
+.sidenav__list-item {
+  padding: 20px 20px 20px 40px;
+  color: #ddd;
+}
+.sidenav__list-item.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.sidenav__list-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.main {
+  grid-area: main;
+  background-color: #8fd4d9;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-header {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  color: slategray;
+}
+.main-header___list {
+  padding: 20px;
+  margin-top: 15px;
+  list-style-type: none;
+}
+.main-header___list-item {
+  padding: 5px;
+  color: #ddd;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  /* height: 100%; */
+  width: 100%;
+  color: #000;
+  background-color: #82bef6;
+  margin-bottom: 20px;
+  padding: 24px;
+  /* box-sizing: border-box; */
+}
+
+/* Force varying heights to simulate dynamic content */
+.card:first-child {
+  height: 485px;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: #648ca6;
+}
+
+/* Non-mobile styles, 750px breakpoint */
+@media only screen and (min-width: 46.875em) {
+  .grid-container {
+    grid-template-columns: 240px 1fr;
+    grid-template-areas:
+      'sidenav header'
+      'sidenav main'
+      'sidenav footer';
+  }
+
+  .header__search {
+    margin-left: 0;
+  }
+
+  .sidenav {
+    position: relative;
+    transform: translateX(0);
+  }
+
+  .sidenav__close-icon {
+    visibility: hidden;
+  }
+}
+
+/* Medium screens breakpoint (1050px) */
+@media only screen and (min-width: 65.625em) {
+  /* Break out main cards into two columns */
+  .main-cards {
+    /* column-count: 2; */
+  }
+}
